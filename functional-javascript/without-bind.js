@@ -34,15 +34,11 @@
 //   * Do not use Function#bind
 //   * Use Function#apply
 
-
-    
-    var slice = Array.prototype.slice
-    
     function logger(namespace) {
-      return function(){
-
+        return function(){
+          console.log.apply(console, [namespace].concat(Array.prototype.slice.call(arguments, 0)));
       }
     }
     
-    module.exports = logger
+    module.exports = logger;
 
