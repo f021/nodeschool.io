@@ -1,0 +1,14 @@
+{
+  "name": "expressworks",
+  "version": "1.0.0",
+  "description": "exersise from nodeschool.io",
+  "main": "hello-world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "f201",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
