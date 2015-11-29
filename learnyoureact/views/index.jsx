@@ -32,6 +32,9 @@
 
 
     var Todo = React.createClass({
+      propTypes: {
+        title: React.PropTypes.number.isRequired
+      },
       render: function() {
         return (
             <tr>
