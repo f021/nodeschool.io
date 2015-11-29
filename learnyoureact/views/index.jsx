@@ -41,13 +41,13 @@
       render: function() {
         return (
             <tr>
-              <td style={{border: "1px solid black"}}>
+              <td style={style.tableContent}>
                 <input type="checkbox" onChange={this.handleChange}/>
               </td>
-              <td style={{border: "1px solid black"}}>
+              <td style={style.tableContent}>
                 {this.props.title}
               </td>
-              <td style={{border: "1px solid black"}}>
+              <td style={style.tableContent}>
                 {this.props.children}
               </td>
             </tr>
@@ -68,5 +68,12 @@
           );
       }
     });
+
+
+    var style = {
+      tableContent: {
+        border: "1px solid black"
+      }
+    }
     
     module.exports = TodoBox;
